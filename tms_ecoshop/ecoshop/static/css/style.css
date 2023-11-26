@@ -1607,12 +1607,13 @@ ol {
 .product__pagination,
 .blog__pagination {
 	padding-top: 10px;
+	align: center
 }
 
 .product__pagination a,
 .blog__pagination a {
 	display: inline-block;
-	width: 30px;
+	min-width: 50px;
 	height: 30px;
 	border: 1px solid #b2b2b2;
 	font-size: 14px;
@@ -1626,6 +1627,7 @@ ol {
 	-ms-transition: all, 0.3s;
 	-o-transition: all, 0.3s;
 	transition: all, 0.3s;
+
 }
 
 .product__pagination a:hover,
@@ -1712,7 +1714,7 @@ ol {
 
 .product__details__text ul {
 	border-top: 1px solid #ebebeb;
-	padding-top: 40px;
+	padding-top: 20px;
 	margin-top: 50px;
 }
 
@@ -1783,7 +1785,7 @@ ol {
 }
 
 .product__details__tab {
-	padding-top: 85px;
+	padding-top: 40px;
 }
 
 .product__details__tab .nav-tabs {
