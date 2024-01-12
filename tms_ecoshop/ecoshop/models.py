@@ -25,6 +25,12 @@ class Category(models.Model):
     def __str__(self):
         return self.name
 
+    def to_json(self):
+        return {
+            'id': self.id,
+            'name': self.name
+        }
+
 
 class User(models.Model):
     name = models.CharField(max_length=100)
@@ -112,3 +118,10 @@ class CustomerReview(Review):
 
     def __str__(self):
         return self.title
+
+
+class Queue(models.Model):
+    item = models.CharField(max_length=255, unique=True)
+
+    def __str__(self):
+        return self.item
